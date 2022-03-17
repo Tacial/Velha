@@ -1,0 +1,21 @@
+#game {
+    display: none;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+}
+.baixo-topo {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+.esquerda-direita {
+    border-left: 1px black solid;
+    border-right:  1px black solid;
+}
