@@ -16,39 +16,53 @@
 <body>
     <h1>Velha</h1>
     <h3></h3>
-      
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Jogadores</h5>
+    
+    <div id="game" class="container-fluid">
+        <div class="row rank">
+            <div class="col-sm">
+                <h2><span id="playerOne"></span> <span class="badge badge-secundary">0</span></h2>
+            </div>
+            <div class="col-sm text-right">
+                <h2><span id="playerTwo"></span> <span class="badge badge-secundary">0</span></h2>
+            </div>
         </div>
-        <div class="modal-body">
-          <p><label for="txtJog">Insira o nome do Jogador 1:</label>
-            <input type="text" name="txtJog" id="txtJog" placeholder="Insira o nome aqui"></p>
-          <p><label for="txtJog">Insira o nome do Jogador 2:</label>
-            <input type="text" name="txtJog" id="txtJog" placeholder="Insira o nome aqui"></p>
+        <div class="row">
+            <table class="center display-1">
+                <tr><td></td>
+                <td class="esquerda-direita"></td>
+                <td></td></tr>
+                
+                <tr><td class="baixo-topo"></td>
+                <td class="esquerda-direita baixo-topo"></td>
+                <td  class="baixo-topo"></td></tr>
+
+                <tr><td></td>
+                <td class="esquerda-direita"></td>
+                <td></td></tr>
+            </table>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Começar o Jogo</button>
-        </div>
-      </div>
-    </div>    
-    <div id="game">
-        <table>
-            <tr><td></td>
-            <td class="esquerda-direita"></td>
-            <td></td></tr>
-            <tr><td class="baixo-topo"></td>
-            <td class="esquerda-direita baixo-topo"></td>
-            <td  class="baixo-topo"></td></tr>
-            <tr><td></td>
-            <td class="esquerda-direita"></td>
-            <td></td></tr>
-        </table>
+
     </div>
 
+        <!-- Modal -->
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Jogadores</h5>
+            </div>
+            <div class="modal-body">
+                <p>>Insira o nome dos Jogadores:</label>
+                <input type="text" name="txtJog" id="txtJog1" placeholder="Insira o nome aqui"></p>
+                <p><label for="txtJog">Insira o nome do Jogador 2:</label>
+                <input type="text" name="txtJog" id="txtJog2" placeholder="Insira o nome aqui"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button id="startGame" type="button" class="btn btn-primary">Começar o Jogo</button>
+            </div>
+          </div>
+        </div>
+    </div>    
 </body>
 </html>
